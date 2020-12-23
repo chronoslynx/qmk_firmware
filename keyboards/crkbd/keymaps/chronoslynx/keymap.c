@@ -100,34 +100,37 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[_DVORAK] = LAYOUT_split_3x6_3(  \
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-       KC_TAB, KC_QUOT, KC_COMM,  KC_DOT,    KC_P,    KC_Y,                         KC_F,    KC_G,    KC_C,    KC_R,    KC_L, KC_SLSH,\ 
+       KC_TAB, KC_QUOT, KC_COMM,  KC_DOT,    KC_P,    KC_Y,                         KC_F,    KC_G,    KC_C,    KC_R,    KC_L, KC_SLSH,\
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LSFT,    KC_A,    KC_O,    KC_E,    KC_U,    KC_I,                         KC_D,    KC_H,    KC_T,    KC_N,    KC_S, KC_RSFT,\
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LCTL, KC_SCLN,    KC_Q,    KC_J,    KC_K,    KC_X,                         KC_B,    KC_M,    KC_W,    KC_V,    KC_Z, KC_MINS,\
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_LGUI,   MO(1), KC_BSPC,     KC_SPC,   MO(2), KC_ENT),\
+                                          KC_LGUI,   MO(1), KC_BSPC,     KC_SPC,   MO(2), KC_ENT \
                                       //`--------------------------'  `--------------------------'
+     ),
 	[_LOWER]  = LAYOUT_split_3x6_3(\
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-       KC_TAB,   KC_NO,   KC_NO,   KC_UP,   KC_NO,   KC_NO,                        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_SLSH,\ 
+       KC_TAB,   KC_NO,   KC_NO,   KC_UP,   KC_NO,   KC_NO,                        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_SLSH,\
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LSFT,   KC_NO, KC_LEFT, KC_DOWN, KC_RIGHT,  KC_NO,                        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_RSFT,\
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
        KC_ESC,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_MINS,\
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_LGUI,   MO(1), KC_BSPC,     KC_SPC, MO(2), KC_RALT),\
+                                          KC_LGUI,   MO(1), KC_BSPC,     KC_SPC, MO(2), KC_RALT\
                                       //`--------------------------'  `--------------------------'
+			),
 	[_RAISE]  = LAYOUT_split_3x6_3(\
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-       KC_TAB, KC_EXLM,   KC_AT, KC_LCBR, KC_RCBR, KC_HASH,                        KC_NO,    KC_7,    KC_8,    KC_9,KC_KP_AST, KC_SLSH,\ 
+       KC_TAB, KC_EXLM,   KC_AT, KC_LCBR, KC_RCBR, KC_HASH,                        KC_NO,    KC_7,    KC_8,    KC_9, KC_PAST, KC_SLSH,\
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LSFT,   KC_NO,   KC_NO, KC_LPRN, KC_RPRN,  KC_DLR,                      KC_TILD,    KC_4,    KC_5,    KC_6,KC_KP_PLUS,KC_RSFT,\
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LCTL,   KC_NO,   KC_NO, KC_LBRC, KC_RBRC, KC_AMPR,                       KC_GRV,    KC_1,    KC_2,    KC_3, KC_BSLS,  KC_EQL,\
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_LGUI,   MO(1), KC_BSPC,     KC_SPC, MO(2), KC_0),\
+                                          KC_LGUI,   MO(1), KC_BSPC,     KC_SPC, MO(2), KC_0\
                                       //`--------------------------'  `--------------------------'
+			)
 };
 int                    RGB_current_mode;
 
